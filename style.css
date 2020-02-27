@@ -182,6 +182,7 @@ label:hover {
   cursor: pointer;
   font-size: 28px;
   line-height: 32px;
+  transition: 0.1s;
 }
 
 .item-1 label:hover {
