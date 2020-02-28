@@ -55,6 +55,7 @@ body {
   margin-top: 20px;
   width: 97.5%;
   height: 200px;
+  color: #BEBCBC;
 }
 
 /* ---------------------- Icons  ---------------------- */
@@ -312,19 +313,19 @@ label:hover {
 .item-header-1 {
   position: absolute;
   margin-top: -21px;
-  width: 57.2%;
+  width: 57.25%;
 }
 
 .item-header-2 {
   position: absolute;
   margin-top: 529px;
-  width: 57.2%;
+  width: 57.25%;
 }
 
 .item-header-3 {
   position: absolute;
   margin-top: 1079px;
-  width: 57.2%;
+  width: 57.25%;
 }
 
 .item-header-1 {
@@ -360,8 +361,9 @@ label:hover {
 
 #text-area {
   margin-top: -100px;
-  width: 90%;
+  width: 88%;
   height: 200px;
+  color: #BEBCBC;
 }
 
 /* ---------------------- Icons  ---------------------- */
@@ -370,7 +372,8 @@ label:hover {
   width: 5%;
   position: relative;
   float: right;
-  bottom: 70px; 
+  bottom: 55px; 
   margin-left: 0;
+  margin-right: -15px;
 }
 }
