@@ -264,15 +264,20 @@ label:hover {
 @media screen and (max-width: 1000px) {
   /* iPhone X */
 
+  * {
+    margin: 0;
+  }
+
   h1 {
-    margin-bottom: 60px;
+    margin-top: -20px;
+    margin-bottom: 40px;
   }
 
 /* ---------------------- About  ---------------------- */
 
 .about {
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 20px;
   cursor: help;
 }
@@ -282,7 +287,7 @@ label:hover {
 #logo {
   width: 10%;
   position: absolute;
-  top: 23px;
+  top: 10px;
   left: -50px;
 }
 
@@ -307,19 +312,19 @@ label:hover {
 .item-header-1 {
   position: absolute;
   margin-top: -21px;
-  width: 68%;
+  width: 57.2%;
 }
 
 .item-header-2 {
   position: absolute;
   margin-top: 529px;
-  width: 68%;
+  width: 57.2%;
 }
 
 .item-header-3 {
   position: absolute;
   margin-top: 1079px;
-  width: 68%;
+  width: 57.2%;
 }
 
 .item-header-1 {
@@ -345,6 +350,10 @@ label:hover {
   outline-offset: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.item-2 img {
+  margin-left: 25px;
 }
 
 /* ---------------------- Text area  ---------------------- */
