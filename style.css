@@ -277,6 +277,15 @@ label:hover {
   cursor: help;
 }
 
+/* ---------------------- Logo  ---------------------- */
+
+#logo {
+  width: 10%;
+  position: absolute;
+  top: 23px;
+  left: -50px;
+}
+
 /* ---------------------- Flex box HEADER ---------------------- */
 
 .container-header {
