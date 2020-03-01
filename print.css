@@ -1,0 +1,244 @@
+ /* ---------------------- Print ---------------------- */
+  
+    @media print {
+      
+  /* ---------------------- Logo  ---------------------- */
+  
+  #logo {
+    width: 3%;
+    position: absolute;
+    top: 30px;
+    left: -50px;
+  }
+  
+  /* ---------------------- About  ---------------------- */
+  
+  .about {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: help;
+  }
+  
+  #about {
+    display: none;
+    margin-top: -30px;
+    margin-left: 20px;
+  }
+  
+  #about-attribution p {
+    padding-left: 0;
+    margin-top: -35px;
+  }
+  
+  /* ---------------------- Text area  ---------------------- */
+  
+  #text-area {
+    margin-top: 20px;
+    width: 96.5%;
+    height: 200px;
+    color: #707070;
+  }
+  
+  /* ---------------------- Icons  ---------------------- */
+  
+  .icons {
+    width: 2%;
+    position: relative;
+    float: right;
+    bottom: 80px; 
+    margin-left: 0;
+  }
+  
+  /* ---------------------- Flex box HEADER ---------------------- */
+  
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .item-header-1, 
+  .item-header-2,
+  .item-header-3 {
+    text-align: center;
+    outline-offset: 20px;
+    margin-bottom: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .item-header-1 {
+    color: #00861f;
+  }
+  
+  .item-header-2 {
+    color: #ffa700;
+  }
+  
+  .item-header-3 {
+    color: #ff0000;
+  }
+  
+  
+  /* ---------------------- Flex box CONTENT  ---------------------- */
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 450px;
+    /* outline: 1px red solid; */
+  }
+  
+  .item {
+    width: 26%;
+    /* margin: 20px; */
+  }
+  
+  .item-1,
+  .item-2,
+  .item-3 {
+    /* margin: 20px; */
+    outline-offset: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  }
+  
+  .item-1, .item-header-1 {
+    outline: 1px #00861f solid;
+  }
+  
+  .item-2, .item-header-2 {
+    outline: 1px #ffa700 solid;
+  }
+  
+  .item-3, .item-header-3 {
+    outline: 1px #ff0000 solid;
+  }
+  
+  ol {
+    list-style-type: none;
+  }
+  
+  .item-1 li, .item-3 li {
+    margin-left: -20px;
+    padding-left: 60px;
+  }
+  
+  
+  /* ---------------------- Hover & Select IMAGE  ---------------------- */
+  
+  .item-2 img {
+    width: 50%;
+    margin-left: 50px;
+  }
+  
+  li input[type="radio"]:checked + label>img {
+    width: 100%;
+    margin-left: -38px;
+  }
+  
+  label>img:hover {
+    width: 100%;
+    margin-left: -38px;
+    transition: 0.1s;
+  }
+  
+  /* ---------------------- Hover & Select TEXT ---------------------- */
+  
+  li input {
+    /* display: none; */
+    opacity: 0;
+  }
+  
+  li input[type="radio"]:not(old) {
+    margin: -22px;
+  }
+  
+  li input[type="radio"]:checked + label {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  label:hover {
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 32px;
+    transition: 0.1s;
+  }
+  
+  .item-1 label:hover {
+    color: #00861f;
+  }
+  
+  .item-1 input[type="radio"]:checked + label {
+    color: #00861f;
+  }
+  
+  .item-2 label:hover {
+    color: #ffa700;
+  }
+  
+  .item-2 input[type="radio"]:checked + label {
+    color: #ffa700;
+  }
+  
+  .item-3 label:hover {
+    color: #ff0000;
+  }
+  
+  .item-3 input[type="radio"]:checked + label {
+    color: #ff0000;
+  }
+  
+  
+  /* ---------------------- Scroll bar  ---------------------- */
+  
+  /* width */
+  .item-1::-webkit-scrollbar,
+  .item-2::-webkit-scrollbar,
+  .item-3::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  /* .item-1::-webkit-scrollbar-track {
+    border: 1px #00861f solid;
+    border-radius: 10px;
+  } */
+  
+  /* Handle */
+  /* .item-1::-webkit-scrollbar-thumb {
+    background: #00861f;
+    border-radius: 10px;
+  } */
+  
+  .item-1::-webkit-scrollbar-corner {
+    display: none;
+  }
+  
+  /* Track */
+  .item-2::-webkit-scrollbar-track {
+    border: 1px #ffa700 solid;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .item-2::-webkit-scrollbar-thumb {
+    background: #ffa700;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  .item-3::-webkit-scrollbar-track {
+    border: 1px #ff0000 solid;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .item-3::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+  }

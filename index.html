@@ -5,15 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>RESPOND</title>
   <link rel="icon" href="img/favicon-32x32.png" type="image/gif" sizes="32x32">
 
 </head>
 
 <body>
+
+  <!-- ABOUT SECTION -->
   <img id="logo" src="img/logo.png" />
   <h1>RESPOND</h1>
   <span class="about">?</span>
+  <div id="about">
+
+    <p>Feb 29, 2020</p>
+
+    <div id="about-attribution">
+    <p>Designed and curated by Grace Young</p>
+    <p>Web Type taught by Marie Otsuka</p>
+    <p>DP advised by Hammett Nurosi</p>
+    <p>Typesetted in Inconsolata monospace</p>
+    </div>
+    
+    <p>This website extends a two poster brainstorming exercise where I was asked to support my claim on whether my DP topic question means something good or bad, negative or positive, etc.</p>
+
+    <p>I took that exercise and made it into a website format, intending my prompts, images, and questions sections to act as constraints while at the same time to generate thinking and responses from others.</p>
+  </div>
  
   <div class="container-header">
     <span class="item item-header-1">PROMPTS</span>
@@ -207,6 +226,12 @@ I should write my thoughts here...</textarea>
   function eraseFunction(){
      document.getElementById('text-area').value = "I should write my thoughts here...";
 };
+
+$(document).ready(function(){
+  $(".about").click(function(){
+    $("#about").slideToggle();
+  });
+});
   </script>
 
 </body>

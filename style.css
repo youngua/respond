@@ -29,7 +29,8 @@ body {
 }
 
 /* ---------------------- Large screens ---------------------- */
-@media screen and (min-width: 1000px) {
+
+  @media screen and (min-width: 1000px) {
 
 /* ---------------------- Logo  ---------------------- */
 
@@ -49,13 +50,24 @@ body {
   cursor: help;
 }
 
+#about {
+  display: none;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+#about-attribution p{
+  padding-left: 0;
+  margin-top: -35px;
+}
+
 /* ---------------------- Text area  ---------------------- */
 
 #text-area {
   margin-top: 20px;
   width: 97.5%;
   height: 200px;
-  color: #BEBCBC;
+  color: #707070;
 }
 
 /* ---------------------- Icons  ---------------------- */
@@ -283,6 +295,17 @@ label:hover {
   cursor: help;
 }
 
+#about {
+  display: none;
+  padding: 0;
+  margin: -40px -20px 40px -18px;
+}
+
+#about-attribution p {
+  margin-top: -30px;
+  padding-left: 0;
+}
+
 /* ---------------------- Logo  ---------------------- */
 
 #logo {
@@ -363,7 +386,7 @@ label:hover {
   margin-top: -100px;
   width: 88%;
   height: 200px;
-  color: #BEBCBC;
+  color: #707070;
 }
 
 /* ---------------------- Icons  ---------------------- */
@@ -377,3 +400,5 @@ label:hover {
   margin-right: -15px;
 }
 }
+
+/* ---------------------- Printing  ---------------------- */
